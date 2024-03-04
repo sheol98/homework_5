@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 16</title>
+  </head>
+  <body>
+    <p>
+      Задача 16. Користувач поступово вводить прибуток магазину за кожен день
+      протягом N тижнів. Знайти загальну величину прибутку та вивести величину
+      прибутку протягом кожного окремого тижня.
+    </p>
+    <script>
+      const N = 3;
+      let sumForDay = 0;
+      for (let week = 1; week <= N; week++) {
+        let sumForWeek = 0;
+        for (let day = 1; day <= 7; day++) {
+          let randomNum = 1 + Math.random() * 300;
+          let profitForDay = parseFloat(
+            prompt(
+              `Прибуток за ${week} тиждень ${day} день`,
+              `${randomNum.toFixed(2)}`
+            )
+          );
+          sumForDay += profitForDay;
+          sumForWeek += profitForDay;
+        }
+        document.write(
+          `<p>Прибуток за ${week} тиждень - ${sumForWeek.toFixed(2)}</p> `
+        );
+      }
+      document.write(`<p>Загальний прибуток = ${sumForDay}</p>`);
+    </script>
+  </body>
+</html>

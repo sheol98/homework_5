@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 15</title>
+  </head>
+  <body>
+    <p>
+      Задача 15. Користувача поступово вводить показники температури протягом
+      року. Знайти середню температуру.
+    </p>
+    <script>
+      let sumTemperature = 0;
+      let temperatureTwoWeek = 14;
+      for (let i = 0; i < temperatureTwoWeek; i++) {
+        let randomNum = 36.6 + Math.random() * 3.4;
+        let temperatureNow = parseFloat(
+          prompt(`Введіть температуру`, `${randomNum.toFixed(1)}`)
+        );
+        sumTemperature += temperatureNow;
+      }
+      let averageTemperature = sumTemperature / temperatureTwoWeek;
+      document.write(
+        `Середня температура за ${temperatureTwoWeek} днів = ${averageTemperature.toFixed(
+          1
+        )}`
+      );
+    </script>
+  </body>
+</html>

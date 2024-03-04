@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 5</title>
+    <p>Задача 5. Вивести таблицю</p>
+    <script>
+      let num = 1;
+      for (let table = 0; table < 1; table++) {
+        document.write(`<table border="2px">`);
+        for (let tr = 0; tr < 3; tr++) {
+          document.write("<tr>");
+          for (let td = 0; td < 3; td++) {
+            document.write(`<td>${num}</td>`);
+            num++;
+          }
+          document.write("</tr>");
+        }
+        document.write(`</table>`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

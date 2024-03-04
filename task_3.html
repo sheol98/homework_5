@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Задача 3</title>
+    <p>Задача 3. Вивести таблицю з одним рядком і 7 стовпцями.</p>
+    <script>
+      for (let table = 0; table < 1; table++) {
+        document.write(`<table border="2px">`);
+        for (let tr = 0; tr < 1; tr++) {
+          document.write("<tr>");
+          for (let td = 1; td <= 7; td++) {
+            document.write(`<td>${td}</td>`);
+          }
+          document.write("</tr>");
+        }
+        document.write(`</tabel>`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
